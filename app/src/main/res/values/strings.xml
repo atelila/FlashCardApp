@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Cards</string>
+    <string name="subtitle_text">Tap to study</string>
+    <string name="study_now_button">Study now</string>
+
+    <string name="info_text_view_message">Number of remaining cards</string>
+    <string name="due_cards_format">%d cards left</string>
+    <string name="question_text">Tree</string>
+    <string name="answer_button_text">Check answer</string>
+    <string name="help_button_text">Help</string>
+    <string name="answer_text">Arbol</string>
+
+    <string name="easy_button_title">easy</string>
+    <string name="doubt_button_title">doubt</string>
+    <string name="difficult_button_title">difficult</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_more_cards_toast_message">No more cards to review.</string>
+
+    <string name="show_more_button_text">show more</string>
+
+    <string name="accept_card_edit_button_title">Accept</string>
+    <string name="cancel_card_edit_button_title">Cancel</string>
+    <string name="edit_question_text">Question</string>
+    <string name="edit_answer_text">Answer</string>
+    <string name="edit_question_title">Write the question here</string>
+    <string name="edit_answer_title">Write the answer here</string>
+    <string name="new_card_fab_description">Add new card</string>
+    <string name="added_card">Card added</string>
+    <string name="delete_button">Delete card</string>
+
+    <string name="decks_nav_menu_title">Decks</string>
+    <string name="study_nav_menu_title">Study</string>
+    <string name="statistics_nav_menu_title">Statistics</string>
+
+    <string name="about_title">About</string>
+    <string name="about_text">" This app is inspired by ANKI, an application for memorization."</string>
+    <string name="creator_title">Creator</string>
+    <string name="elise_text" translatable="false">Elise Skilbred</string>
+    <string name="app_description_title">App description</string>
+    <string name="app_description">This is a card application</string>
+    <string name="version_title">Version</string>
+    <string name="version_text">Version 0.9</string>
+
+    <string name="stat_title">Statistics</string>
+    <string name="repetition_title">Number of cards reviewed per day in the last week</string>
+    <string name="settings_menu_title">settings</string>
+    <string name="logout_menu_title">Log out</string>
+    <string name="login_menu_title">log in</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="decks_header">Decks</string>
+
+    <!-- Maximum number of cards Preferences -->
+    <string name="max_number_cards">Maximum number of cards</string>
+
+    <!-- Board Preferences -->
+    <string name="board_title">Show board</string>
+    <string name="board_summary_on">Board available</string>
+    <string name="board_summary_off">Board unavailable</string>
+
+</resources>

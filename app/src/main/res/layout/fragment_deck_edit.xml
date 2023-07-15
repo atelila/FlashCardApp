@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name = "deck"
+            type = "es.uam.eps.dadm.cards.Deck"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/curr_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            tools:text=""/>
+
+        <TextView
+            android:id="@+id/text_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/curr_date"
+            android:text="deck_name"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginVertical="5dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_question_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_question"
+            android:hint="edit_text_name"
+            android:layout_marginHorizontal="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_question"
+                android:text="@{deck.name}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/text_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_text_question_yes"
+            android:text="deck_id"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:layout_marginVertical="5dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_answer_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_answer"
+            android:hint="edit_text_id"
+            android:layout_marginHorizontal="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_answer"
+                android:text="@{String.valueOf(deck.deckId)}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/card_edit_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/edit_text_answer_yes"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/accept_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_700"
+                android:text="@string/accept_card_edit_button_title" />
+            <Button
+                android:id="@+id/cancel_button"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_error"
+                android:text="@string/cancel_card_edit_button_title" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_edit_buttons"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="delete deck"/>
+
+    </RelativeLayout>
+</layout>

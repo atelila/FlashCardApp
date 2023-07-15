@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="es.uam.eps.dadm.cards.TitleFragment"
+        android:label="TitleFragment"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="es.uam.eps.dadm.cards.fragments.LoginFragment"
+        android:label="loginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="es.uam.eps.dadm.cards.StudyFragment"
+        android:label="StudyFragment"
+        tools:layout="@layout/fragment_study"/>
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="es.uam.eps.dadm.cards.CardListFragment"
+        android:label="CardListFragment"
+        tools:layout="@layout/fragment_card_list">
+        <action
+            android:id="@+id/action_cardListFragment_to_studyFragment"
+            app:destination="@id/studyFragment" />
+        <action
+            android:id="@+id/action_cardListFragment_to_cardEditFragment"
+            app:destination="@id/cardEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardEditFragment"
+        android:name="es.uam.eps.dadm.cards.CardEditFragment"
+        android:label="CardEditFragment"
+        tools:layout="@layout/fragment_card_edit">
+        <action
+            android:id="@+id/action_cardEditFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment"
+            app:popUpTo="@id/cardListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="cardId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="es.uam.eps.dadm.cards.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="es.uam.eps.dadm.cards.StatisticsFragment"
+        android:label="StatisticsFragment"
+        tools:layout="@layout/fragment_statistics"/>
+</navigation>

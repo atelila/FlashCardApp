@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "229355999522",
+    "firebase_url": "https://eliseskilbredcards-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eliseskilbredcards",
+    "storage_bucket": "eliseskilbredcards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229355999522:android:6f5d5cfac382c8db38957b",
+        "android_client_info": {
+          "package_name": "es.uam.eps.dadm.cards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229355999522-scn820n0puvjs6lt9o41lj5kqsam8r4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "es.uam.eps.dadm.cards",
+            "certificate_hash": "d6afd05cdffecd38f8d712777d89d4afbe619c4e"
+          }
+        },
+        {
+          "client_id": "229355999522-14e2bi29rmopq2nd8vea3ikig07bame6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyW2L4doCZivSD1wyBGJyItjPhNSa7sV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229355999522-14e2bi29rmopq2nd8vea3ikig07bame6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/cardListFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="@string/decks_nav_menu_title"/>
+    <item
+        android:id="@id/studyFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_fitness_center_24"
+        android:title="@string/study_nav_menu_title"/>
+    <item
+        android:id="@id/statisticsFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_query_stats_24"
+        android:title="@string/statistics_nav_menu_title"/>
+    <item
+        android:id="@id/aboutFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_question_mark_24"
+        android:title="@string/about_title"/>
+</menu>
